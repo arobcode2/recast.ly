@@ -1,4 +1,5 @@
 var App = () => (
+  //this is an App component
   <div>
     <nav className="navbar">
       <div className="col-md-6 offset-md-3">
