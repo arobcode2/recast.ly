@@ -1,6 +1,13 @@
 class App extends React.Component {
   //this is an App component
+  constructor(props) {
+    super(props);
+    
+    this.state = {index: 0, videos: exampleVideoData};
+  }
+
   render() {
+    //console.log(this.videos[this.index]);
     return <div>
       <nav className="navbar">
         <div className="col-md-6 offset-md-3">
@@ -9,10 +16,10 @@ class App extends React.Component {
       </nav>
       <div className="row">
         <div className="col-md-7">
-          <div><h5><em><VideoPlayer video={exampleVideoData[0]}/></em></h5></div>
+          <div><h5><em><VideoPlayer video={this.state.videos[this.state.index]}/></em></h5></div>
         </div>
         <div className="col-md-5">
-          <div><h5><em><VideoList videos={exampleVideoData}/></em></h5></div>
+          <div><h5><em><VideoList videos={this.state.videos}/></em></h5></div>
         </div>
       </div>
     </div>;
