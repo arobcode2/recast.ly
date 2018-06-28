@@ -9,7 +9,7 @@ window.fakeVideoData = [{
     description: 'The best cat video on the internet!',
     thumbnails: {
       default: {
-        url: 'http://www.fndvisions.org/img/cutecat.jpg',
+        url: 'https://pbs.twimg.com/profile_images/567285191169687553/7kg_TF4l.jpeg',
       }
     }
   }
@@ -37,7 +37,7 @@ window.fakeVideoData = [{
     description: 'Watch the ribbon cutting of the first coding bootcamp in space',
     thumbnails: {
       default: {
-        url: 'https://d3c5s1hmka2e2b.cloudfront.net/uploads/topic/image/14/hack_reactor.png',
+        url: 'https://pbs.twimg.com/profile_images/567285191169687553/7kg_TF4l.jpeg',
       }
     }
   }

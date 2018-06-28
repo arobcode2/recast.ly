@@ -1,10 +1,9 @@
-var VideoList = () => (
-  <div className="video-list">
-    <div><h5><em>videoListEntry</em> view goes here</h5></div>
-    <div><h5><em>videoListEntry</em> view goes here</h5></div>
-    <div><h5><em>videoListEntry</em> view goes here</h5></div>
-    <div><h5><em>videoListEntry</em> view goes here</h5></div>
-    <div><h5><em>videoListEntry</em> view goes here</h5></div>
+var VideoList = (props) => (
+  <div className="video-list">      
+    {props.videos.map( (video, i) => {
+      return <VideoListEntry key={i} video={video}/>;
+    }
+    )}
   </div>
 );
 
